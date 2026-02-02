@@ -4,7 +4,12 @@ const connectDB = require("./db/db");
 connectDB();
 const PORT = 8000;
 app.listen(PORT,()=>{
-    console.log(`SERVER RUNNING ON PORT: ${PORT}`);
+    try {
+        console.log(`SERVER RUNNING ON PORT: ${PORT}`);
+        
+    } catch (error) {
+        console.log(error);
+    }
     
 })
 
