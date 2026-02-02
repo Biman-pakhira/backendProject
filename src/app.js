@@ -22,5 +22,13 @@ app.post("/notes", (req, res)=>{
         message:"data sent successfully"
     })
 })
+app.delete("/notes/:index", (req, res)=>{
+    const data = req.params.index;
+    delete notes[ data ];
+
+    res.status(200).json({
+        message:"data deleted successfully"
+    })
+})
 
 module.exports = app;
