@@ -1,9 +1,9 @@
 const mongoose = require("mongoose")
 
 const modelSchema = new mongoose.Schema({
-    name: String,
-    job: String,
-    age: Number
+    username: String,
+    email: String,
+    password: String
 })
 
 const userModel = mongoose.model("Random", modelSchema)
