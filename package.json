@@ -17,6 +17,7 @@
   "homepage": "https://github.com/Biman-pakhira/backendProject#readme",
   "description": "",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
